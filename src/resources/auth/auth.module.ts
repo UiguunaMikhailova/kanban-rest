@@ -8,15 +8,13 @@ import { UsersService } from '../users/users.service';
 
 import { User } from '../users/users.entity';
 
-console.log(process.env.JWT_SECRET_KEY);
-
 @Module({
   controllers: [AuthController],
   providers: [AuthService, UsersService],
   imports: [
     TypeOrmModule.forFeature([User]),
     JwtModule.register({
-      secret: process.env.JWT_SECRET_KEY || 'netu',
+      secret: process.env.JWT_SECRET_KEY,
     }),
   ],
   exports: [AuthService, JwtModule],

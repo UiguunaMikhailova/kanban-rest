@@ -2,7 +2,6 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { JwtService } from '@nestjs/jwt';
-import jwt = require('jsonwebtoken');
 import bcrypt = require('bcryptjs');
 
 import { User } from '../users/users.entity';
@@ -22,7 +21,7 @@ export class AuthService {
     if (!match) {
       throw new HttpException('User was not founded!', HttpStatus.FORBIDDEN);
     }
-    
+
     const token = this.jwtService.sign({ userId: user.id, login: body.login })
 
     return { token };
