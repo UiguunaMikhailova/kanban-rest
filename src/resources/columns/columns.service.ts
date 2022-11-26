@@ -101,7 +101,7 @@ export class ColumnsService {
   }
 
   transactSortingRecords(
-    repository: Repository<Column | Task>,
+    repository: Repository<Column> | Repository<Task>,
     records: (Column | Task)[],
     currentRecord: Column | Task,
     moveTo: number,
