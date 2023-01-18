@@ -21,9 +21,12 @@ export class AuthService {
     if (!match) {
       throw new HttpException('User was not founded!', HttpStatus.FORBIDDEN);
     }
+    try {
+      const token = this.jwtService.sign({ userId: user.id, login: body.login }, {secret: process.env.JWT_SECRET_KEY});
 
-    const token = this.jwtService.sign({ userId: user.id, login: body.login })
-
-    return { token };
+      return { token };
+    } catch (error) {
+      throw new Error('Error');
+    }
   }
 }

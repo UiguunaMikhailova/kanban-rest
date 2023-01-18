@@ -70,6 +70,8 @@ async function bootstrap() {
 
   await app.listen(PORT, '0.0.0.0');
 
+  console.log(`LISTENING @ ${PORT}`);
+
   process.on('unhandledRejection', () => {
     logger.error({ msg: 'unhandledRejection event' });
     process.exit(1);

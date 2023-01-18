@@ -11,4 +11,9 @@ export class CreateBoardDto {
   @IsString()
   @IsNotEmpty()
   readonly description!: string;
+
+  @ApiProperty({ example: 'My board tasks', description: 'Board description' })
+  @IsString()
+  @IsNotEmpty()
+  readonly sharedWith!: string;
 }

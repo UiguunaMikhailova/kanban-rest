@@ -10,6 +10,7 @@ import {
   Post,
   Put,
   UseGuards,
+  Headers,
 } from '@nestjs/common';
 import { ApiTags, ApiBearerAuth, ApiOperation, ApiResponse, ApiParam } from '@nestjs/swagger';
 
@@ -36,8 +37,10 @@ export class BoardsController {
   @ApiResponse(boards404)
   @Get()
   @HttpCode(HttpStatus.OK)
-  getAll(): Promise<IBoard[]> {
-    return this.boardService.getAll();
+  getAll(@Headers() headers: Record<string, string>): Promise<IBoard[]> {
+    const [_, token] = headers.authorization.split(' ');
+    const boards = this.boardService.getAll(token);
+    return boards;
   }
 
   @ApiOperation({ summary: 'Get the board by id' })
@@ -58,8 +61,9 @@ export class BoardsController {
   @ApiResponse(boards404)
   @Post()
   @HttpCode(HttpStatus.CREATED)
-  create(@Body() createBoardDto: CreateBoardDto): Promise<IBoard> {
-    return this.boardService.create(createBoardDto);
+  create(@Body() createBoardDto: CreateBoardDto, @Headers() headers: Record<string, string>): Promise<IBoard> {
+    const [_, token] = headers.authorization.split(' ');
+    return this.boardService.create(createBoardDto, token);
   }
 
   @ApiOperation({ summary: 'Delete board' })

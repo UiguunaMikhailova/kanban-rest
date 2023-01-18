@@ -1,7 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { BaseEntity, Entity, Unique, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { BaseEntity, Entity, Unique, PrimaryGeneratedColumn, Column, OneToMany, ManyToMany, JoinTable } from 'typeorm';
 
 import { Task } from '../tasks/tasks.entity';
+import { Board } from '../boards/boards.entity';
 
 export interface ILogin {
   login: string;
@@ -45,4 +46,11 @@ export class User extends BaseEntity {
 
   @OneToMany(() => Task, (task) => task.user, { onDelete: 'CASCADE', onUpdate: 'CASCADE' })
   tasks!: string;
+
+  @OneToMany(() => Board, (board) => board.user, { onDelete: 'CASCADE', onUpdate: 'CASCADE' })
+  boards!: string;
+
+  // ! -------------------------------------------------------------------------
+  @ManyToMany(() => Board, (board) => board.sharedWith)
+  sharedBoards!: Board[];
 }
