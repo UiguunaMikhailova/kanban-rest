@@ -50,7 +50,6 @@ export class User extends BaseEntity {
   @OneToMany(() => Board, (board) => board.user, { onDelete: 'CASCADE', onUpdate: 'CASCADE' })
   boards!: string;
 
-  // ! -------------------------------------------------------------------------
   @ManyToMany(() => Board, (board) => board.sharedWith)
   sharedBoards!: Board[];
 }

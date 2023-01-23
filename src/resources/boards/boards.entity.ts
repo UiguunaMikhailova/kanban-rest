@@ -27,6 +27,7 @@ export interface IBoard {
   id: UUIDType;
   title: string;
   description: string;
+  shared?: Array<User>;
 }
 
 /**
@@ -66,7 +67,6 @@ export class Board extends BaseEntity {
   @OneToMany(() => Task, (task) => task.board, { onDelete: 'CASCADE', onUpdate: 'CASCADE' })
   tasks!: Task[];
 
-  // ! -------------------------------------------------------------------------
   @ManyToMany(() => User, (user) => user.sharedBoards)
   @JoinTable()
   sharedWith!: User[];

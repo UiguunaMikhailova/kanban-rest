@@ -63,7 +63,7 @@ export class TasksService {
       .leftJoin('tasks.files', 'files')
       .getOne();
     if (!task) {
-      throw new HttpException('Task was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Task not found!', HttpStatus.NOT_FOUND);
     }
     return task;
   }
@@ -94,7 +94,7 @@ export class TasksService {
 
     const currentTask = tasks.find((task) => task.id === taskId);
     if (!currentTask) {
-      throw new HttpException('Task was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Task not found!', HttpStatus.NOT_FOUND);
     }
 
     const arrayTasksToSort = tasks.filter((task) => task.order > currentTask.order);
@@ -108,7 +108,6 @@ export class TasksService {
     });
   }
 
-  // TODO: add functional to update when tasks moves between columns
   async update(boardId: UUIDType, columnId: UUIDType, taskId: UUIDType, body: UpdateTaskDto): Promise<ITask> {
     await this.boardRepository.isExist(boardId);
     await this.columnRepository.isExist(columnId);
@@ -119,7 +118,7 @@ export class TasksService {
 
     const currentTask = tasks.find((task) => task.id === taskId);
     if (!currentTask) {
-      throw new HttpException('Task was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Task not found!', HttpStatus.NOT_FOUND);
     }
 
     if (body.order < 1) {

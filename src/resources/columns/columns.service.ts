@@ -21,7 +21,7 @@ export class ColumnsService {
   async isExist(id: UUIDType) {
     const resp = await this.columnsRepository.findOne({ where: { id } });
     if (!resp) {
-      throw new HttpException('Column was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Column not found!', HttpStatus.NOT_FOUND);
     }
     return !!resp;
   }
@@ -54,7 +54,7 @@ export class ColumnsService {
       .getOne();
 
     if (!column) {
-      throw new HttpException('Column was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Column not found!', HttpStatus.NOT_FOUND);
     }
     return column as IColumn;
   }
@@ -86,7 +86,7 @@ export class ColumnsService {
 
     const currentColumn = columns.find((column) => column.id === columnId);
     if (!currentColumn) {
-      throw new HttpException('Column was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Column not found!', HttpStatus.NOT_FOUND);
     }
 
     const arrayColumnsToSort = columns.filter((column) => column.order > currentColumn.order);
@@ -135,7 +135,7 @@ export class ColumnsService {
 
     const currentColumn = columns.find((column) => column.id === columnId);
     if (!currentColumn) {
-      throw new HttpException('Column was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('Column not found!', HttpStatus.NOT_FOUND);
     }
 
     if (body.order < 1) {

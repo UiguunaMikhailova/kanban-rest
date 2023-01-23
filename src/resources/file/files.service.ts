@@ -25,7 +25,7 @@ export class FileService {
   async findFileId(taskId: string, filename: string): Promise<string> {
     const modelFile = await this.fileRepository.findOne({ select: ['fileId'], where: { filename } });
     if (!modelFile) {
-      throw new HttpException('File was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('File not found!', HttpStatus.NOT_FOUND);
     }
     return modelFile.fileId as string;
   }

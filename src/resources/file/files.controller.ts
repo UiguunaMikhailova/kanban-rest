@@ -77,6 +77,6 @@ export class FileController {
       const stream = createReadStream(filepath);
       return new StreamableFile(stream);
     }
-    throw new HttpException('File was not founded!', HttpStatus.NOT_FOUND);
+    throw new HttpException('File not found!', HttpStatus.NOT_FOUND);
   }
 }

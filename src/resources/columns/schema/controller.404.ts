@@ -4,7 +4,7 @@ export default {
     type: 'object',
     properties: {
       statusCode: { example: 404 },
-      message: { example: 'Columns was not founded!' },
+      message: { example: 'Columns not found!' },
     },
   },
 };

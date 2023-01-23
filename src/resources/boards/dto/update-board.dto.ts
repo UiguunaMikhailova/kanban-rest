@@ -1,5 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsString, IsNotEmpty } from 'class-validator';
+import { Type } from 'class-transformer';
+import { IsString, IsNotEmpty, IsArray } from 'class-validator';
 
 export class UpdateBoardDto {
   @ApiProperty({ example: 'Homework tasks', description: 'Board title' })
@@ -11,4 +12,13 @@ export class UpdateBoardDto {
   @IsString()
   @IsNotEmpty()
   readonly description!: string;
+
+  @ApiProperty({
+    example: '[{id: "1", login: "Jane"}, {id: "2", login: "John"}]',
+    description: 'Users, this board shared with',
+  })
+  @IsNotEmpty()
+  @IsArray()
+  @Type(() => String)
+  readonly sharedWith?: string[];
 }

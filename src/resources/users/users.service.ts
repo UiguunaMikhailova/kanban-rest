@@ -18,7 +18,7 @@ export class UsersService {
   async getById(id: UUIDType): Promise<IUserNoId> {
     const user = await this.usersRepository.findOne({ select: ['id', 'name', 'login'], where: { id } });
     if (!user) {
-      throw new HttpException('User was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('User not found!', HttpStatus.NOT_FOUND);
     }
     return user as IUserNoId;
   }
@@ -37,7 +37,7 @@ export class UsersService {
   async remove(id: UUIDType): Promise<void> {
     const user = (await this.usersRepository.findOne({ where: { id } })) as User;
     if (!user) {
-      throw new HttpException('User was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('User not found!', HttpStatus.NOT_FOUND);
     }
     await user.remove();
   }
@@ -45,7 +45,7 @@ export class UsersService {
   async update(id: UUIDType, body: IUser): Promise<IUserNoId> {
     const user = (await this.usersRepository.findOne({ where: { id } })) as User;
     if (!user) {
-      throw new HttpException('User was not founded!', HttpStatus.NOT_FOUND);
+      throw new HttpException('User not found!', HttpStatus.NOT_FOUND);
     }
 
     const password = await genHashPassword(body.password);

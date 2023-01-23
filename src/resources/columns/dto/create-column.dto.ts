@@ -6,9 +6,4 @@ export class CreateColumnDto {
   @IsString()
   @IsNotEmpty()
   readonly title!: string;
-
-  // @ApiProperty({ example: '1', description: 'Column order' })
-  // @IsNumber()
-  // @IsNotEmpty()
-  // readonly order!: number;
 }

@@ -4,7 +4,7 @@ export default {
     type: 'object',
     properties: {
       statusCode: { example: 404 },
-      message: { example: 'User was not founded!' },
+      message: { example: 'User not found!' },
     },
   },
 };
