@@ -22999,3 +22999,73 @@
 {"level":30,"time":1674464538327,"pid":19168,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/logs/error, GET} route"}
 {"level":30,"time":1674464538327,"pid":19168,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/logs/info, GET} route"}
 {"level":30,"time":1674464538330,"pid":19168,"hostname":"DESKTOP-9AP3TID","msg":"Nest application successfully started"}
+{"level":30,"time":1674480163905,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"AppController {/}:"}
+{"level":30,"time":1674480163908,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/, GET} route"}
+{"level":30,"time":1674480163908,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"UsersController {/users}:"}
+{"level":30,"time":1674480163909,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users, GET} route"}
+{"level":30,"time":1674480163910,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users/:id, GET} route"}
+{"level":30,"time":1674480163911,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users/:id, DELETE} route"}
+{"level":30,"time":1674480163912,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users/:id, PUT} route"}
+{"level":30,"time":1674480163912,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"AuthController {/}:"}
+{"level":30,"time":1674480163913,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/signin, POST} route"}
+{"level":30,"time":1674480163914,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/signup, POST} route"}
+{"level":30,"time":1674480163914,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"BoardsController {/boards}:"}
+{"level":30,"time":1674480163914,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards, GET} route"}
+{"level":30,"time":1674480163915,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:id, GET} route"}
+{"level":30,"time":1674480163916,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards, POST} route"}
+{"level":30,"time":1674480163916,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:id, DELETE} route"}
+{"level":30,"time":1674480163917,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:id, PUT} route"}
+{"level":30,"time":1674480163917,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"ColumnsController {/boards/:boardId/columns}:"}
+{"level":30,"time":1674480163918,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns, GET} route"}
+{"level":30,"time":1674480163919,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId, GET} route"}
+{"level":30,"time":1674480163919,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns, POST} route"}
+{"level":30,"time":1674480163920,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId, DELETE} route"}
+{"level":30,"time":1674480163920,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId, PUT} route"}
+{"level":30,"time":1674480163920,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"TasksController {/boards/:boardId/columns/:columnId/tasks}:"}
+{"level":30,"time":1674480163921,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks, GET} route"}
+{"level":30,"time":1674480163921,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks/:taskId, GET} route"}
+{"level":30,"time":1674480163922,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks, POST} route"}
+{"level":30,"time":1674480163922,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks/:taskId, DELETE} route"}
+{"level":30,"time":1674480163923,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks/:taskId, PUT} route"}
+{"level":30,"time":1674480163923,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"FileController {/}:"}
+{"level":30,"time":1674480163924,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/file, POST} route"}
+{"level":30,"time":1674480163924,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/file/:taskid/:filename, GET} route"}
+{"level":30,"time":1674480163924,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"LogsController {/logs}:"}
+{"level":30,"time":1674480163925,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/logs/error, GET} route"}
+{"level":30,"time":1674480163925,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/logs/info, GET} route"}
+{"level":30,"time":1674480163928,"pid":3448,"hostname":"DESKTOP-9AP3TID","msg":"Nest application successfully started"}
+{"level":30,"time":1674480167906,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"AppController {/}:"}
+{"level":30,"time":1674480167910,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/, GET} route"}
+{"level":30,"time":1674480167910,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"UsersController {/users}:"}
+{"level":30,"time":1674480167911,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users, GET} route"}
+{"level":30,"time":1674480167912,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users/:id, GET} route"}
+{"level":30,"time":1674480167912,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users/:id, DELETE} route"}
+{"level":30,"time":1674480167914,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/users/:id, PUT} route"}
+{"level":30,"time":1674480167914,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"AuthController {/}:"}
+{"level":30,"time":1674480167914,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/signin, POST} route"}
+{"level":30,"time":1674480167915,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/signup, POST} route"}
+{"level":30,"time":1674480167915,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"BoardsController {/boards}:"}
+{"level":30,"time":1674480167916,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards, GET} route"}
+{"level":30,"time":1674480167917,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:id, GET} route"}
+{"level":30,"time":1674480167917,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards, POST} route"}
+{"level":30,"time":1674480167918,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:id, DELETE} route"}
+{"level":30,"time":1674480167918,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:id, PUT} route"}
+{"level":30,"time":1674480167918,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"ColumnsController {/boards/:boardId/columns}:"}
+{"level":30,"time":1674480167919,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns, GET} route"}
+{"level":30,"time":1674480167919,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId, GET} route"}
+{"level":30,"time":1674480167920,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns, POST} route"}
+{"level":30,"time":1674480167920,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId, DELETE} route"}
+{"level":30,"time":1674480167921,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId, PUT} route"}
+{"level":30,"time":1674480167921,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"TasksController {/boards/:boardId/columns/:columnId/tasks}:"}
+{"level":30,"time":1674480167922,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks, GET} route"}
+{"level":30,"time":1674480167922,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks/:taskId, GET} route"}
+{"level":30,"time":1674480167923,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks, POST} route"}
+{"level":30,"time":1674480167923,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks/:taskId, DELETE} route"}
+{"level":30,"time":1674480167924,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/boards/:boardId/columns/:columnId/tasks/:taskId, PUT} route"}
+{"level":30,"time":1674480167924,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"FileController {/}:"}
+{"level":30,"time":1674480167924,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/file, POST} route"}
+{"level":30,"time":1674480167925,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/file/:taskid/:filename, GET} route"}
+{"level":30,"time":1674480167925,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"LogsController {/logs}:"}
+{"level":30,"time":1674480167925,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/logs/error, GET} route"}
+{"level":30,"time":1674480167926,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Mapped {/logs/info, GET} route"}
+{"level":30,"time":1674480167928,"pid":3264,"hostname":"DESKTOP-9AP3TID","msg":"Nest application successfully started"}

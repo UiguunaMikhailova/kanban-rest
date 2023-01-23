@@ -8,19 +8,13 @@ dotenv.config({
 
 export default {
   type: 'postgres',
-  host: 'localhost',
-  port: 5432,
   cache: false,
-  database: 'kanban_pdb',
-  username: 'kanban_user',
-  password: 'kanban',
-  // url: process.env.PGDB_URL,
+  url: process.env.PGDB_URL,
   synchronize: false,
   logging: false,
-  // ssl: {
-  //   rejectUnauthorized: false,
-  // },
-  ssl: false,
+  ssl: {
+    rejectUnauthorized: false,
+  },
   entities: ['src/resources/**/**.entity{.ts,.js}'],
   migrations: ['./migrations/*.ts'],
 } as ConnectionOptions;
